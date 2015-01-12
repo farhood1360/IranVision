@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/*
+	Programmer: Farhood Rashidi
+	Date: 04/21/2013
+	Name: Zoroastrian News Agency 
+*/
+
+header, hgroup, nav, footer, figure, figcaption, section, aside, article { 
+	display: block; 
+}
+
+body{
+	margin: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+h1{
+	color:#191970;
+	padding:10px;
+	height: 30px;
+	text-align: center;
+	border: 5px solid blue;
+	border-radius: 10px;
+	background-color:#e6e6fa; 
+}
+
+h2{
+	color:#191970;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-shadow: 1px 1px 1px #000033;
+	text-align: center;
+	padding-top: 20px;
+}
+
+h3{
+	color:blue;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+span{
+	font-size: 12px;
+	font-style: italic;
+	padding-left: 20px;
+	color: red;
+}
+
+.button{
+    background:#FFF;
+    color:#000;
+    text-align:center;
+    border-radius: 7px;
+    margin-left: 20px;
+    border:3px solid #666; 
+}
+
+.button:hover{
+    background:black;
+    color:white;
+}
+
+#mySubmit{
+    margin-left: 180px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+textarea{
+	margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid blue;
+	border-radius: 5px;
+	background-color:#E3EFF7;
+}
+
+label{
+    margin-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+input{
+	border: 1px solid blue;
+	border-radius: 5px;
+	background-color:#E3EFF7;
+}
+
+form{
+	margin-left: 330px;
+	margin-bottom: 30px;
+	width: 500px;
+	border: 3px solid blue;
+	border-radius: 5px;
+	background-color: white;
+	padding-top: 20px;
+}
+
+img{
+	float:left;
+	margin-right:30px;
+	padding:5px;
+}
+
+p{
+	padding-top:5px;
+	padding-left:30px;
+}
+
+nav{
+	list-style-type:none;
+	padding: 0px;
+	background-color:#aeaed4;
+	color:#ffffff;
+	font-weight: bold;
+	margin-right: 0px;
+	margin-top: 0px;
+	font-size: 14px;
+	float:left;
+}
+
+nav  ul{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	float:left;
+}
+
+nav li{
+	border: 2px;
+	float:left;
+	display: block;
+	position: relative;
+	list-style-type: none;
+}
+
+nav a  {
+	text-decoration: none;
+	border: 2px solid;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 7px;
+	display: block;
+}
+
+nav a:link  {
+	color: #191970;
+}
+
+nav a:visited  {
+    color:#000;
+}
+
+nav a:hover  {
+	color: #ffffff;
+	background-color: #999;
+}
+
+nav li ul {
+	position: absolute;
+    display: none;
+	width: 75px;
+	left: 60px; 
+	text-decoration: none;
+	background-color:#aeaed4;
+	color:#ffffff;
+	font-weight: bold;
+}
+
+nav li:hover ul{
+    display: block; 
+}
+
+col {
+	float: left;
+	width: 192px;
+}
+
+aside {
+	margin-top: 50px;
+}
+
+article{
+	background-color:#e6e6fa; 
+	border: 2px solid blue;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #000033;
+
+}
+
+footer{
+	font-family: Georgia,"Times New Roman", serif ;
+	font-style:italic;
+    font-size:11px;
+	display: block;
+	text-align: center;
+	border: 3px solid blue;
+	border-radius: 5px;
+	background-color:#e6e6fa;
+	height: 30px;
+	margin-top: 30px; 
+}
+
+a{
+	text-decoration: none;
+}
+
+table{
+    width:500px;
+    border-collapse: collapse;
+    border-color: #191970;
+    border-radius: 15px;
+    border-width: 4px;
+    border-spacing: 0;
+    margin-top: 30px;
+    margin-left: 300px;
+    font-size: 12px;
+    background-color: white;
+}
+
+td,th{
+    border:2px solid #191970;
+    padding:5px;
+}
+
+tr:first-of-type{
+    font-weight: bold;
+    background-color:black;
+    color:white;
+}
