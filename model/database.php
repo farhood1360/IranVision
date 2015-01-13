@@ -98,10 +98,11 @@ class Database {
     //Insert the new records to members table.  
     //@param $lname
     //@param $fname
-    public function insert_editor($lname, $fname){
+    //@param $state
+    public function insert_editor($lname, $fname, $state){
         try{
             $this->table = "Editors";
-            $this->insert = "INSERT INTO $this->table(last_name, first_name) VALUES('{$lname}', '{$fname}')";
+            $this->insert = "INSERT INTO $this->table(last_name, first_name, state) VALUES('{$lname}', '{$fname}' , '{$state}')";
             $this->sql = mysql_query($this->insert);
             if($this->sql){
                 $this->message = $fname." ".$lname." is inputed.<br/>";
