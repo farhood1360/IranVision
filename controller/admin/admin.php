@@ -13,6 +13,7 @@ if(isset($_POST["submit"])){
 	}else{
 		$fname = addslashes($_POST['fname']);
 		$lname = addslashes($_POST['lname']);
+		$state = 'IL';
 	}
 }
 
@@ -27,7 +28,7 @@ if(isset($_POST["back"])){
 $newDatabae = new Database();
 $newDatabae->connection();
 $newDatabae->select();
-$newDatabae->insert_editor($lname, $fname);
+$newDatabae->insert_editor($lname, $fname, $state);
 $newDatabae->disconnect();
 ?>
 
