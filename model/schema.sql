@@ -1,3 +1,5 @@
+-- Name: schema.sql
+-- Author: Farhood Rashidi
 -- Host: localhost
 -- Database: `Iran Vision`
 -- SET time_zone = "CST6CDT";
@@ -27,7 +29,7 @@ CREATE TABLE `Members` (
   `date_end` varchar(50) NOT NULL,
   `editor_id` int(11) NOT NULL COMMENT 'Foreign Key',
   PRIMARY KEY (`member_id`),
-  KEY `editor_id` (`editor_id`)
+  KEY `Editors` (`editor_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='This table demonstrates the member''s personal information';
 
 CREATE TABLE `Content` (
@@ -38,7 +40,7 @@ CREATE TABLE `Content` (
   `content` text NOT NULL,
   `member_id` int(11) NOT NULL COMMENT 'Foreign Key',
   PRIMARY KEY (`content_id`),
-  KEY `member_id` (`member_id`)
+  KEY `Members` (`member_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT=='This table demonstrates the content of webpages';
 
 CREATE TABLE `Survay` (
@@ -50,7 +52,7 @@ CREATE TABLE `Survay` (
   `question_5` varchar(100) DEFAULT NULL,
   `member_id` int(11) NOT NULL COMMENT 'Foreign Key',
   PRIMARY KEY (`survey_id`),
-  KEY `member_id` (`member_id`)
+  KEY `Members` (`member_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT=='This table demonstrates the surveys';
 
 CREATE TABLE `Website` (
@@ -59,5 +61,5 @@ CREATE TABLE `Website` (
   `category` varchar(20) NOT NULL,
   `editor_id` int(11) NOT NULL COMMENT 'Foreign Key',
   PRIMARY KEY (`page_id`),
-  KEY `editor_id` (`editor_id`)
+  KEY `Editors` (`editor_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='This table demonstrates the web page''s information';
