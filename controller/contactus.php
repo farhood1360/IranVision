@@ -5,14 +5,13 @@
    This script gets the member's first name, last name, e-mail address, phone number, username and password and then displays the confirmation message or error message. 
 */
 
-include 'database.php';
+include '../model/database.php';
 
 if(isset($_POST["submit"])){
 	if(empty($_POST['fname']) || empty($_POST['lname']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['username']) ||  empty($_POST['password']) ){
 		$message = "<p style='color: red; text-align: center'>You must enter your first name, last name, email, phone number, user name, and password. <br> Click the submit button for registration agian.</p>";
 	}else{
-		if (preg_match("/^[a-z0-9\._-]+@+[a-z0-9\._-]+\.+[a-z]{2,3}$/i", $_POST['email']) != 1)
-		{
+		if (preg_match("/^[a-z0-9\._-]+@+[a-z0-9\._-]+\.+[a-z]{2,3}$/i", $_POST['email']) != 1){
 			$message = "<p style='color: red'>The email field was invalid. <br> Click the submit button for registration agian.</p>";
 		}else{
 			if (preg_match("/^\(([2-9][0-9]{2})\)[2-9][0-9]{2}-[0-9]{4}$/i", $_POST['phone']) != 1){
@@ -46,6 +45,7 @@ if(isset($_COOKIE["LastVisit"])){
 }else{
 	$message .= "Welcome!";
 }
+
 date_default_timezone_set('CST6CDT');
 setcookie("LastVisit", date("m/d/Y h:i:s a"), time() + (60 * 60 * 24 * 365));
 
@@ -87,7 +87,7 @@ $newDatabae->disconnect();
 				<li><a href="../view/tradition.php">Tradition Of Zoroastrian</a></li>
 				<li><a href="../view/zoroastrian.php">Zoroastrianism</a></li>
 				<li><a href="../view/historyofzoroastrian.php">History Of Zoroastrian</a></li>
-				<li><a href="../model/contactus.php">Sign Up</a></li>
+				<li><a href="../controller/contactus.php">Sign Up</a></li>
 				<li><a href="../model/login.php">Sign In</a></li>
 			</ul>
       	</nav>
