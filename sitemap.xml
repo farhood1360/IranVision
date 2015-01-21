@@ -1,4 +1,4 @@
-<xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 	<urlset xmlns="https://github.com/farhood1360/iranVision">
 		<index name="index.php"></index>
 		<aboutus name="aboutus.php"></aboutus>
@@ -15,7 +15,7 @@
 			<survey name="survay.php"></survey>
 		</controller>
 		<css>
-			<zna name="zna,css"></zna>
+			<zna name="zna.css"></zna>
 		</css>
 		<image>
 			<logo name="logo.png"></logo>
