@@ -4,6 +4,8 @@
 -- Database: `Iran Vision`
 -- SET time_zone = "CST6CDT";
 
+CREATE DATABASE 'Iran Vision'
+
 CREATE TABLE `Editors` (
   `editor_id` int(11) NOT NULL,
   `last_name` varchar(20) NOT NULL,
