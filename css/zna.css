@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
 	Programmer: Farhood Rashidi
-	Date: 04/21/2013
+	Date: 01/21/2015
 	Name: Zoroastrian News Agency 
 */
 
@@ -22,7 +22,7 @@ h1{
 	text-align: center;
 	border: 5px solid blue;
 	border-radius: 10px;
-	background-color:#e6e6fa; 
+	background: linear-gradient(to left,#aeaed4, #e6e6fa);
 }
 
 h2{
@@ -38,6 +38,7 @@ h3{
 	font-family:"Times New Roman", Times, serif;
 	font-size: 18px;
 	font-weight: bold;
+	padding-left: 10px;
 }
 
 span{
@@ -106,6 +107,31 @@ img{
 p{
 	padding-top:5px;
 	padding-left:30px;
+}
+
+.comment{
+	font-size: 12px;
+}
+
+.zoomPic {
+  margin: 30px;
+  width: 300px;
+  height: 180px;
+  background-color: blue;
+  background-image: url(http://placehold.it/1200x720);
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+  background-size: 300px 180px;
+  
+  -webkit-transition: all 2.5s ease-in-out;
+  -moz-transition: all 2.5s ease-in-out;
+  -ms-transition: all 2.5s ease-in-out;
+  -o-transition: all 2.5s ease-in-out;
+  transition: all 2.5s ease-in-out;
+}
+
+.zoomPic.zoom {
+  background-size: 1200px 720px !important; 
 }
 
 nav{
@@ -197,7 +223,7 @@ footer{
 	text-align: center;
 	border: 3px solid blue;
 	border-radius: 5px;
-	background-color:#e6e6fa;
+	background: linear-gradient(to right, #aeaed4, #e6e6fa);
 	height: 30px;
 	margin-top: 30px; 
 }
@@ -228,4 +254,31 @@ tr:first-of-type{
     font-weight: bold;
     background-color:black;
     color:white;
+}
+
+#like{
+	float: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#dislike{
+	float: none;
+	padding: 0px;
+	margin-bottom: -8px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#comment{
+	float: none;
+	padding: 0px;
+	padding-right: 3px;
+	margin-bottom: -8px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+hr{
+	border: 1px solid blue;
 }
